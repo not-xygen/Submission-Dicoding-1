@@ -1,0 +1,261 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;600;700;900&display=swap");
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: "Poppins", sans-serif;
+	margin: 0;
+	padding: 0;
+}
+
+.flex-direction-column {
+	display: flex;
+	flex-direction: column;
+}
+
+h1 {
+	font-size: 1.5rem;
+	font-weight: 600;
+	margin: 0;
+	padding: 0;
+}
+
+h2 {
+	font-size: 1.25rem;
+	font-weight: 600;
+	margin: 0;
+	padding: 0;
+}
+
+h3 {
+	font-size: 1rem;
+	font-weight: 400;
+	margin: 0;
+	padding: 0;
+}
+
+p {
+	font-size: 1rem;
+	font-weight: 300;
+	margin: 0;
+	padding: 0;
+}
+
+/* Header */
+
+nav {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	padding: 1.25rem 2rem;
+}
+
+.logo {
+	height: 100px;
+}
+
+.logo > img {
+	height: 100%;
+	object-fit: cover;
+}
+
+.nav-menu {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	gap: 1.25rem;
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+.nav-menu > li > a {
+	color: rgb(28 25 23);
+	text-decoration: none;
+}
+
+.nav-link {
+	transition: 0.7s ease-in;
+}
+
+.nav-link:hover {
+	border-bottom: 0.075rem solid rgb(28 25 23);
+}
+
+/* Main */
+
+main {
+	display: flex;
+	flex-direction: row;
+	margin: 0rem 1.25rem;
+	padding: 0rem 1.25rem;
+}
+
+main > #content {
+	flex-basis: 75%;
+	padding: 1.25rem;
+}
+
+main > aside {
+	flex-basis: 25%;
+	padding: 1.25rem;
+}
+
+.launch-card {
+	display: flex;
+	flex-direction: column;
+	padding: 1.75rem;
+	border-radius: 0.75rem;
+	color: white;
+	background-image: linear-gradient(
+			to left,
+			transparent,
+			rgba(28, 25, 23, 0.9)
+		),
+		url("/assets/images/starship_stacked.jpg");
+	background-size: cover;
+}
+
+.launch-desc > h1 {
+	padding: 1.25rem 0rem;
+}
+
+.remind-container {
+	align-self: end;
+}
+
+.remind-button {
+	margin: 1.25rem 0rem;
+	padding: 1.25rem;
+	border: 0.075rem solid rgb(28 25 23);
+	border-radius: 1rem;
+	background-color: white;
+	font-weight: 600;
+	transition: 0.1s ease;
+}
+
+.remind-button:hover {
+	border: 0.075rem solid white;
+	background-color: rgb(28 25 23);
+	color: white;
+}
+
+.articles {
+	margin: 1.25rem 0;
+}
+
+.article-card {
+	display: flex;
+	flex-direction: row;
+	padding: 1.75rem;
+	border-bottom: 0.075rem solid rgb(28 25 23);
+	border-radius: 0.75rem;
+}
+
+.img-card {
+	flex-basis: 40%;
+	height: 250px;
+}
+
+.img-card > img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	border-radius: 1rem;
+}
+
+.article-content {
+	display: flex;
+	flex-direction: column;
+	flex-basis: 60%;
+	padding: 1rem 1rem;
+}
+
+.readmore-container {
+	align-self: end;
+}
+
+.readmore-button {
+	cursor: pointer;
+	margin: 1.25rem 0rem;
+	font-size: 1rem;
+	font-weight: 600;
+	border: none;
+	border-radius: 1rem;
+	background-color: white;
+}
+
+.profile-card {
+	display: flex;
+	flex-direction: column;
+	padding: 1.25rem;
+	border-radius: 1rem;
+	color: white;
+	background-color: rgb(28 25 23);
+}
+
+.profile-picture {
+	align-self: center;
+	margin: 1.25rem;
+	height: 150px;
+}
+
+.profile-picture > img {
+	height: 100%;
+	object-fit: cover;
+	border-radius: 100%;
+}
+
+.profile-card > h2,
+h3 {
+	text-align: center;
+}
+
+.profile-links {
+	display: flex;
+	justify-content: center;
+	margin: 0;
+	padding: 0;
+}
+
+.profile-links > li {
+	width: 45px;
+	margin: 1.25rem 0.5rem;
+	list-style-type: none;
+}
+
+.profile-links > li > a > img {
+	width: 100%;
+}
+
+/* Footer */
+
+footer {
+	display: flex;
+	justify-content: center;
+	text-align: center;
+	width: 100%;
+	margin-top: 2rem;
+	border-radius: 1rem 1rem 0rem 0rem;
+	color: white;
+	background-color: rgb(28 25 23);
+}
+
+footer > div {
+	padding: 2rem;
+}
+
+/* Media Query */
+@media only screen and (max-width: 768px) {
+	main {
+		flex-direction: column;
+	}
+
+	.article-card {
+		flex-direction: column;
+		margin: 2rem 0;
+		padding: 0;
+	}
+}
