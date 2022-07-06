@@ -1,3 +1,28 @@
+// Tombol Hamburger
+const hamburgerButton = document.querySelector(".hamburger")
+const navMenu = document.querySelector(".nav-menu")
+
+hamburgerButton.addEventListener("click", () => {
+	hamburgerButton.classList.toggle("active")
+	navMenu.classList.toggle("active")
+})
+
+document.querySelectorAll(".nav-link").forEach((n) =>
+	n.addEventListener("click", () => {
+		hamburgerButton.classList.remove("active")
+		navMenu.classList.remove("active")
+	})
+)
+
+// Remind Alert
+
+const remindButton = document.querySelector(".remind-button")
+
+remindButton.addEventListener("click", () => {
+	alert("Anda akan diberitahukan")
+})
+
+// Memberikan data kepada elemen artikel
 const articles = [
 	{
 		id: 1,
