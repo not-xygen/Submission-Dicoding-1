@@ -30,7 +30,7 @@ const showArticles = articles
         <div class="img-card">
             <img
                 src=${article.img}
-                alt=""
+				loading="lazy"
             />
         </div>
         <div class="article-content">
