@@ -116,6 +116,7 @@ main > aside {
 		),
 		url("/assets/images/starship_stacked.jpg");
 	background-size: cover;
+	animation: fadeInBottom 1s both;
 }
 
 .launch-desc > h1 {
@@ -152,6 +153,7 @@ main > aside {
 	padding: 1.75rem;
 	border-bottom: 0.075rem solid rgb(28 25 23);
 	border-radius: 0.75rem;
+	animation: fadeInBottom 1.25s both;
 }
 
 .img-card {
@@ -194,6 +196,7 @@ main > aside {
 	border-radius: 1rem;
 	color: white;
 	background-color: rgb(28 25 23);
+	animation: fadeInBottom 1.5s both;
 }
 
 .profile-picture {
@@ -257,5 +260,17 @@ footer > div {
 		flex-direction: column;
 		margin: 2rem 0;
 		padding: 0;
+	}
+}
+
+/* fadeIn Animation */
+@keyframes fadeInBottom {
+	0% {
+		opacity: 0;
+		transform: translateY(+50px);
+	}
+	100% {
+		opacity: 1;
+		transform: translateY(0);
 	}
 }
